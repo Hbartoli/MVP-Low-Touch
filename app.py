@@ -93,7 +93,7 @@ else:
             
             for idx, row in socios_filtrados.iterrows():
                 with st.container():
-                    col_info, col_accion = st.columns()
+                    col_info, col_accion = st.columns(2)
                     with col_info:
                         st.subheader(row["Nombre"])
                         st.write(f"🎯 **Especialidad:** {row['Habilidad']} | 🏢 **Industria:** {row['Industria']} | ⏱️ **Disponibilidad:** {row['Disponibilidad']}")
